@@ -1,0 +1,2 @@
+class RandomImagesController < ApplicationController
+end
