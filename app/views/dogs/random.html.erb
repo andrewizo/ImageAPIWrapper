@@ -1,0 +1,6 @@
+<!-- Random Dog Image -->
+<%= link_to 'Generate Random Dog Image', '/dogs/random', class: 'btn btn-primary', style: 'display: block; margin-bottom: 20px;' %>
+<h1 style="margin-top: 20px;">Random Dog Image</h1>
+<% if @dog.present? %>
+  <%= image_tag @dog.url, style: 'width: 1080px; height: 1080px; object-fit: cover; margin-top: 20px;' %>
+<% end %>

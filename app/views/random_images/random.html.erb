@@ -1,0 +1,6 @@
+<!-- Random Image -->
+<%= link_to 'Generate Random Image', '/random_images/random', class: 'btn btn-primary', style: 'display: block; margin-bottom: 20px;', 'data-turbo-frame': 'top' %>
+<h1 style="margin-top: 20px;">Random Image</h1>
+<% if @url.present? %>
+  <%= image_tag @url, style: 'width: 1080px; height: 1080px; object-fit: cover; margin-top: 20px;' %>
+<% end %>

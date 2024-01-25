@@ -11,6 +11,13 @@
   </head>
 
   <body>
+     <div style="text-align: center; margin-top: 50px;">
+      <%= link_to 'Dogs', '/dogs/random', class: 'btn btn-primary', style: 'margin-right: 10px;' %>
+      <%= link_to 'Cats', '/cats/random', class: 'btn btn-primary', style: 'margin-right: 10px;' %>
+      <%= link_to 'Anime', '/anime/random', class: 'btn btn-primary', style: 'margin-right: 10px;' %>
+      <%= link_to 'Random', '/random_images/random', class: 'btn btn-primary' %>
+    </div>
+
     <%= yield %>
   </body>
 </html>
