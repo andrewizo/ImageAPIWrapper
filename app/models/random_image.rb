@@ -1,2 +1,7 @@
+# app/models/random_image.rb
 class RandomImage < ApplicationRecord
-end
+    def self.random
+      order(Arel.sql('RANDOM()')).first
+    end
+  end
+  
