@@ -11,10 +11,8 @@ This Rails application serves as a simple API wrapper for fetching and displayin
 - Fetch random anime images from [Lorem Picsum](https://picsum.photos/).
 - Fetch random images from [Unsplash Source API](https://source.unsplash.com/).
 
-## Setup
-cd image-api-wrapper
 
-### Prerequisites
+## Prerequisites
 
 - Ruby
 - Ruby on Rails
@@ -28,5 +26,7 @@ Each click will fetch a new image and store it in the database for later retriev
 ## Structure
 - app/controllers: Contains controllers for handling HTTP requests.
 - app/models: Defines ActiveRecord models for interacting with the database.
+- app/services: Contains service classes for interacting with external APIs.
 - app/views: Contains the views for rendering HTML templates.
 - config/routes.rb: Defines application routes.
+- db: Contains database-related files.
